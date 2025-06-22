@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tolxxy-bank/Registration</title>
+  <link href="/css/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                  icons: {
+                    'icon': 'fill-gray-600 hover:fill-gray-700 w-5',
+                  },
+                  backgroundImage: {
+                    'img': "url('../workspace/project/pictures/ape.jpg')",
+                  },
+                  boxShadow: {
+                    'soft-shad': '0 2px 20px -10px rgba(0, 0, 0, 0.3)',
+                    'top-shadow': '0 -1px 13px -10px rgba(0, 0, 0, 0.3)'
+                  },
+                    colors: {
+                        'pry-color': '#317FE5',
+                        'light-blue': '#E8F0FF',
+                        'sidebar-bg': '#F8FAFF',
+                        'sec-color': '#f7f7f9',
+                        'white': '#fff'
+                    }
+                }
+            } 
+        }
+</script>
+
+</head>
+  <body class="bg-sec-color md:bg-white 
+            md:flex"> 
+
+    <!-- left container -->
+<div class="md:w-full md:px-[8em] lg:px-[9em] pb-10 md:pb-12 md:text-center md:bg-sec-color lg:w-[59vw] ">
+<!-- top text -->
+  <div class="flex flex-col px-4 pt-5">
+      <div class="text-lg font-semibold text-gray-500 
+              md:my-5 md:text-gray-700 md:text-left">Tolxxy<span class="text-pry-color text-lg font-bold">Bank</span>
+      </div>
+          <h1 class="font-bold text-gray-800 text-2xl mt-8">Welcome To Tolxxy Bank</h1>
+          <p class="text-gray-500 text-sm my-2">Register and enjoy seemless transactions</p>
+  </div>  
+
+  <form id="registerForm" class="px-4 mt-8 text-left">
+
+    <!-- first and last name div -->
+    <div class="flex gap-3 md:gap-5 w-full">
+      <!-- first name -->
+      <div class="flex flex-col w-full">
+        <label for="firstName" class="text-sm text-gray-800">First Name</label>
+        <input type="text" id="firstName" name="firstName" 
+               class="border bg-white border-gray-300 rounded-md px-3 py-4 mt-2 mb-4 w-full text-sm text-gray-800 outline outline-1 outline-gray-200 focus:outline-offset-2 hover:outline-gray-300 hover:outline-2 focus:outline-pry-color focus:outline-2" 
+               placeholder="First Name" required>
+      </div>
+      <!-- last name -->
+      <div class="flex flex-col w-full">
+        <label for="lastName" class="text-sm text-gray-800">Last Name</label>
+        <input type="text" id="lastName" name="lastName" 
+               class="border bg-white border-gray-300 rounded-md px-3 py-4 mt-2 mb-4 w-full text-sm text-gray-800 outline outline-1 outline-gray-200 focus:outline-offset-2 hover:outline-gray-300 hover:outline-2 focus:outline-pry-color focus:outline-2" 
+               placeholder="Last Name" required>
+      </div>
+
+    </div>
+
+    <!-- email div -->
+    <label for="email" class="text-sm text-gray-800">Email Address</label>
+    <input type="email" id="email" name="email" 
+                  class="border bg-white border-gray-300 rounded-md px-3 py-4 mt-2 mb-4 w-full text-sm text-gray-800 outline outline-1 outline-gray-200 focus:outline-offset-2 hover:outline-gray-300 hover:outline-2 focus:outline-pry-color focus:outline-2" 
+                  placeholder="Email Address" required>
+
+    <!--phone and bvn div  -->
+    <div class=" flex gap-3 md:gap-5 w-full">
+      <!-- phone -->
+      <div class=" flex flex-col w-full">
+        <label for="phone" class="text-sm text-gray-800">Phone Number</label>
+        <input type="tel" id="phone" name="phone" 
+               class="border bg-white border-gray-300 rounded-md px-3 py-4 mt-2 mb-4 w-full text-sm text-gray-800 outline outline-1 outline-gray-200 focus:outline-offset-2 hover:outline-gray-300 hover:outline-2 focus:outline-pry-color focus:outline-2" 
+               placeholder="Phone Number" required>
+      </div>
+      <!-- bvn -->
+      <div class="flex flex-col w-full">
+        <label for="bvn" class="text-sm text-gray-800">BVN</label>
+        <input type="number" id="bvn" name="bvn" 
+               class="border bg-white border-gray-300 rounded-md px-3 py-4 mt-2 mb-4 w-full text-sm text-gray-800 outline outline-1 outline-gray-200 focus:outline-offset-2 hover:outline-gray-300 hover:outline-2 focus:outline-pry-color focus:outline-2" 
+               placeholder="BVN" required>
+      </div>
+    </div>
+        <!-- password -->
+          <label for="password" class="text-sm text-gray-800">Password</label><br>
+          <label for="password" class="text-[10px] text-pry-color">Password must be 6 digit or more </label>
+          <input type="password" id="password" name="password" 
+              class="border bg-white border-gray-300 rounded-md px-3 py-4 mt-2 mb-4 w-full text-sm text-gray-800 outline outline-1 outline-gray-200 focus:outline-offset-2 hover:outline-gray-300 hover:outline-2 focus:outline-pry-color focus:outline-2" 
+              placeholder="Password" required >
+
+              <!-- confirm password -->
+          <label for="confirmPassword" class="text-sm text-gray-800">Confirm Password</label>
+          <input type="Password" id="confirmPassword" name="confirmPassword" 
+              class="border bg-white border-gray-300 rounded-md px-3 py-4 mt-2 mb-4 w-full text-sm text-gray-800 outline outline-1 outline-gray-200 focus:outline-offset-2 hover:outline-gray-300 hover:outline-2 focus:outline-pry-color focus:outline-2" 
+              placeholder="Confirm Password" required>
+          <!-- register button -->
+          <button id="regBtn" class="bg-pry-color text-white rounded-md p-4 mt-5 w-full
+              hover:bg-blue-600 transition duration-300 ease-in-out disabled:bg-gray-300" href="verification.html" disabled>Register</button>
+              <!--already have an account  -->
+            <p class="text-sm mt-3 text-gray-800 md:text-center">Already a member? <a id="login" class="cursor-pointer text-pry-color border-b-2 border-pry-color font-semibold" href="login.html">Login</a></p>
+            <!-- <h1 id="noti" class="fixed top-0 left- block w-full p-3 bg-blue-300">yes</h1> -->
+  </form>
+</div>
+
+<div class="hidden lg:block w-[40vw] h-full bg-red-400 fixed right-0 top-0">
+ <img src="/pics/bank.jpg" alt="" class="bg-cover h-full w-full">
+</div>
+
+
+
+
+    <script>
+
+      const registerForm = document.getElementById("registerForm");
+
+      // sign up 
+
+      const handleSubmit = (e) => {
+        e.preventDefault()
+         const firstName = document.getElementById("firstName").value.trim();
+            const lastName = document.getElementById("lastName").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const bvn = document.getElementById("bvn").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const confirmPassword = document.getElementById("confirmPassword").value.trim();
+
+           const nameRegex = /^[A-Za-z]{2,}$/; // Only letters, min 2 characters
+            const bvnRegex = /^\d{1}$/; // Must be exactly 11 digits
+            const phoneRegex = /^\d{11}$/; // Must be exactly 11 digits
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Valid email format
+            const passwordValid = password.length >= 1;
+            const passwordsMatch = password === confirmPassword;
+
+            if (nameRegex.test(firstName) && nameRegex.test(lastName) && phoneRegex.test(phone) &&
+                bvnRegex.test(bvn) && emailRegex.test(email) && passwordValid && passwordsMatch) {
+
+                const generatedCode = Math.floor(100000 + Math.random() * 900000); // Generate a 6-digit code
+                localStorage.setItem("verificationCode", generatedCode); // Save OTP for next page
+
+                alert(`Verification Code Sent: ${generatedCode}`); // Simulating email sending
+                
+                window.location.href="verification.html"; // Redirect to verification page
+            // Redirect to verification page
+            } else {
+                alert("Incomplete input or invalid email or password. Please try again.");
+            }
+      }
+        registerForm.addEventListener('submit', handleSubmit)
+       
+        // to make the button tchange from disabled to enabled
+    document.getElementById('firstName').addEventListener('input', validateSignUp)
+    document.getElementById('lastName').addEventListener('input', validateSignUp)
+    document.getElementById('email').addEventListener('input', validateSignUp)
+    document.getElementById('phone').addEventListener('input', validateSignUp)
+    document.getElementById('bvn').addEventListener('input', validateSignUp)
+    document.getElementById('password').addEventListener('input', validateSignUp)
+    document.getElementById('confirmPassword').addEventListener('input', validateSignUp)
+
+    function validateSignUp(){
+            const firstName = document.getElementById("firstName").value.trim();
+            const lastName = document.getElementById("lastName").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const bvn = document.getElementById("bvn").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const confirmPassword = document.getElementById("confirmPassword").value.trim();
+            const regBtn= document.getElementById("regBtn");
+
+
+           const nameRegex = /^[A-Za-z]{2,}$/; // Only letters, min 2 characters
+            const bvnRegex = /^\d{1}$/; // Must be exactly 11 digits
+            const phoneRegex = /^\d{11}$/; // Must be exactly 11 digits
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Valid email format
+            const passwordValid = password.length >= 1;
+            const passwordsMatch = password === confirmPassword;
+
+            if (nameRegex.test(firstName) && nameRegex.test(lastName) && phoneRegex.test(phone) &&
+                bvnRegex.test(bvn) && emailRegex.test(email) && passwordValid && passwordsMatch) {
+                regBtn.disabled = false
+                regBtn.classList.remove("bg-gray-300", "cursor-not-allowed");
+                regBtn.classList.add("bg-blue-500", "hover:bg-blue-700", "cursor-pointer");
+      
+            } else {
+               regBtn.disabled = true;
+                regBtn.classList.add("bg-gray-300", "cursor-not-allowed");
+                regBtn.classList.remove("bg-blue-500", "hover:bg-blue-700", "cursor-pointer");
+            }
+    }    
+
+    </script>
+  </body>
+  </html>                     

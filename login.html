@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tolxxy-bank/Registration</title>
+  <link href="/css/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                  icons: {
+                    'icon': 'fill-gray-600 hover:fill-gray-700 w-5',
+                  },
+                  backgroundImage: {
+                    'img': "url('../workspace/project/pictures/ape.jpg')",
+                  },
+                  boxShadow: {
+                    'soft-shad': '0 2px 20px -10px rgba(0, 0, 0, 0.3)',
+                    'top-shadow': '0 -1px 13px -10px rgba(0, 0, 0, 0.3)'
+                  },
+                    colors: {
+                        'pry-color': '#317FE5',
+                        'light-blue': '#E8F0FF',
+                        'sidebar-bg': '#F8FAFF',
+                        'sec-color': '#f7f7f9',
+                        'white': '#fff'
+                    }
+                }
+            } 
+        }
+</script>
+
+</head>
+  <body class="bg-sec-color 
+            md:flex"> 
+
+    <!-- left container -->
+<div class="w-full lg:w-[60vw] h-screen flex flex-col">
+    <!-- login overlay div -->
+  
+    <!-- conatainer -->
+       
+          <div class="px-4 md:px-[8em] lg:px-[9em] mt-5">
+         <div class="text-lg font-semibold text-gray-500 
+              md:my-5 md:text-gray-700 md:text-left">Tolxxy<span class="text-pry-color text-lg font-bold">Bank</span>
+      </div>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute w-7 h-7 ml-auto mt-3 cursor-pointer rounded-full fill-gray-800 lg:hover:bg-pry-color lg:hover:fill-white lg:hover:p-1 lg:transition-all lg:ease lg:duration-200" onclick="document.getElementById('overlayLogin').classList.add('hidden')">
+              <path d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z">
+                </path>
+              </svg> -->
+            <div class="text-left md:text-center">
+              <p class="font-bold text-gray-800 text-2xl mt-8">Welcome back!</p>
+              <p class="text-gray-500 text-sm my-2">Sign in to continue enjoying seemless banking</p>
+            </div>
+
+          
+            <form id="loginSubmit" class="text-left mt-8">
+
+            <label for="" class="text-sm text-gray-800">Email</label>
+              <input type="email" id="loginEmail" placeholder="Email Address" class="px-4 py-4 mt-3 border border-gray-300 rounded-lg w-full mb-4 outline outline-1 outline-gray-200 focus:outline-offset-2 hover:outline-gray-300 hover:outline-2 focus:outline-pry-color focus:outline-2" required>
+
+              <label for="" class="text-sm text-gray-800">Password</label>
+              <input type="password" id="loginPassword" placeholder="****************" class="px-4 py-4 mt-3 border border-gray-300 rounded-lg w-full mb-4 outline outline-1 outline-gray-200 focus:outline-offset-2 hover:outline-gray-300 hover:outline-2 focus:outline-pry-color focus:outline-2" required>
+              
+              <a href="forgot-password.html" class=" md:hidden text-sm flex justify-end text-pry-color font-semibold">Forgot Email or password</a>
+
+
+                <button id="loginBtn" class="bg-pry-color text-white rounded-md p-4 mt-5 w-full focus:outline-none font-bold
+                      hover:bg-blue-600 transition duration-300 ease-in-out disabled:bg-gray-300" disabled>Login
+                </button>
+                <div class=" flex justify-between mt-7">
+                    <span class="text-sm text-gray-800 md:text-center flex">Don't have an account? <a href="register.html" class="text-pry-color font-semibold"> &nbsp; Register</a></span>
+                    <a href="forgot-password.html" class="hidden md:block  text-sm flex justify-center text-pry-color font-semibold">Forgot Email or password</a>
+
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <div class="hidden lg:block w-[40vw] h-full bg-red-400 fixed right-0 top-0">
+         <img src="/pics/bank.jpg" alt="" class="bg-cover h-full w-full">
+
+
+<script>
+    // login access
+     const loginSubmit = document.getElementById("loginSubmit")
+
+      const handleLoginSubmit= (e) => {
+        e.preventDefault()    
+          alert("Login Successful!");
+          window.location.href = "tailwind.html"; // Redirects to home page
+      }
+
+       function validateLogin() {
+            const loginEmail = document.getElementById("loginEmail").value.trim();
+            const loginPassword = document.getElementById("loginPassword").value.trim();
+            const loginBtn = document.getElementById("loginBtn");
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Valid email format
+            const passwordValid = loginPassword.length >= 6; // Password must be at least 6 characters
+            
+            if(emailRegex.test(loginEmail) && passwordValid) {
+              loginBtn.disabled = false
+              loginBtn.classList.remove("bg-gray-300", "cursor-not-allowed");
+              loginBtn.classList.add("bg-blue-500", "hover:bg-blue-700", "cursor-pointer");
+            } else {
+                loginBtn.disabled = true;
+                loginBtn.classList.add("bg-gray-300", "cursor-not-allowed");
+                loginBtn.classList.remove("bg-blue-500", "hover:bg-blue-700", "cursor-pointer");
+            };
+        }
+        loginSubmit.addEventListener('submit', handleLoginSubmit)
+
+        document.getElementById("loginEmail").addEventListener("input", validateLogin);
+        document.getElementById("loginPassword").addEventListener("input", validateLogin);
+
+</script>
+</body>
+</html>

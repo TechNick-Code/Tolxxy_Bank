@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tolxxy-bank/verification</title>
+  <link href="/css/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                  icons: {
+                    'icon': 'fill-gray-600 hover:fill-gray-700 w-5',
+                  },
+                  backgroundImage: {
+                    'img': "url('../workspace/project/pictures/ape.jpg')",
+                  },
+                  boxShadow: {
+                    'soft-shad': '0 2px 20px -10px rgba(0, 0, 0, 0.3)',
+                    'top-shadow': '0 -1px 13px -10px rgba(0, 0, 0, 0.3)'
+                  },
+                    colors: {
+                        'pry-color': '#317FE5',
+                        'light-blue': '#E8F0FF',
+                        'sidebar-bg': '#F8FAFF',
+                        'sec-color': '#f7f7f9',
+                        'white': '#fff'
+                    }
+                }
+            } 
+        }
+</script>
+
+</head>
+  <body class="bg-white w-full h-full md:flex md:flex-row md:justify-center md:items-center"> 
+
+    <!-- main content -->
+    <div class="flex md:w-1/2 flex-col justify-center items-center text-center md:bg-white rounded-lg gap-7">
+    <!-- top text -->
+        <div class="w-full px-4 py-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex w-7 h-7 items-center rounded-full fill-gray-800 lg:hover:bg-pry-color lg:hover:fill-white lg:hover:p-1 lg:transition-all lg:ease lg:duration-200" onclick="window.history.back()">
+                <path d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z">
+                </path>
+            </svg>
+        </div>
+    
+    <div class="flex flex-col m-4">
+        <h2 class="text-xl font-semibold mb-2">Please verify your account</h2>
+        <p class="text-sm text-gray-500">Enter the six digits code sent to your email address to verify your new account</p>
+        <div id="sixDigitBox" class="flex justify-between my-7">
+            <input class="w-10 h-12 text-center rounded-md outline outline-2 outline-gray-400 focus:outline-pry-color"></input>
+            <input class="w-10 h-12 text-center rounded-md outline outline-2 outline-gray-400 focus:outline-pry-color"></input>
+            <input class="w-10 h-12 text-center rounded-md outline outline-2 outline-gray-400 focus:outline-pry-color"></input>
+            <input class="w-10 h-12 text-center rounded-md outline outline-2 outline-gray-400 focus:outline-pry-color"></input>
+            <input class="w-10 h-12 text-center rounded-md outline outline-2 outline-gray-400 focus:outline-pry-color"></input>
+            <input class="w-10 h-12 text-center rounded-md outline outline-2 outline-gray-400 focus:outline-pry-color"></input>
+        </div>
+        <p>Didn't recieve code? <span class="text-pry-color font-semibold">Resend</span></p>
+        <span id="countDown" class="text-pry-color">0.48</span>
+        <button class="w-full bg-pry-color text-white font-semibold rounded-lg my-7 p-3 disabled:bg-gray-300" disabled>Continue</button>
+    </div>
+</div>
+
+
+</body>
+</html>
