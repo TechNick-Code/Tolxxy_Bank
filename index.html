@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tolxxy Bank</title>
+  <link href="/css/output.css" rel="stylesheet">
+  <link rel="icon" href="pics/logo (3).png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+ <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                  icons: {
+                    'icon': 'fill-gray-600 hover:fill-gray-700 w-5',
+                  },
+                  backgroundImage: {
+                    'img': "url('../workspace/project/pictures/ape.jpg')",
+                  },
+                  boxShadow: {
+                    'soft-shad': '0 2px 20px -10px rgba(0, 0, 0, 0.3)',
+                    'top-shadow': '0 -1px 13px -10px rgba(0, 0, 0, 0.3)'
+                  },
+                    colors: {
+                        'pry-color': '#317FE5',
+                        'light-blue': '#E8F0FF',
+                        'sidebar-bg': '#F8FAFF',
+                        'sec-color': '#f7f7f9',
+                        'white': '#fff'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body class="bg-sec-color md:bg-white
+            lg:flex lg:flex-col md:justify-normal lg:justify-normal">
+    <header class="flex w-full justify-between items-center px-[1em] overflow z-50">
+
+            <!-- left section -->
+            <div class="flex items-center gap-1">
+                <div class="icon lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 mr-3">
+                        <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z">
+                        </path>
+                    </svg>       
+                </div>
+                <img src="pics/logo (3).png" alt="Tolxxy Bank Logo" class="size-7 rounded-full p-1    ">
+                <h1 class="text-pry-color font-semibold text-lg">Tolxxy<span class="text-black">Bank</span></h1>
+            </div>
+            
+            <!-- right section -->
+            <div class="flex items">
+                <nav class="">
+
+                    <a href="" class="get-started lg:hidden bg-pry-color text-white text-sm px-3 py-4">Get started</a>
+                    
+                    <ul class="hidden space-y-4 lg:flex lg:items-center lg:gap-6 lg:space-y-0">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Accounts</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Transactions</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Settings</a></li>
+                        <a href="" class="get-started bg-pry-color text-white text-sm px-3 py-4">Get started</a>
+                    </ul>
+                </nav>
+            
+    </header>
+
+    <div class="chatbot bg-pry-color rounded-tl-[2em] rounded-tr-[2em] rounded-bl-[2em] fixed bottom-5 right-5 px-4 py-3 shadow-lg text-white" tooltip="Chat with us">
+        <img src="pics/ai.svg" alt="" class="size-8">
+    </div>
+
+    <section>
+        <div class="w-full h-[60vh] bg-img bg-cover bg-center bg-pry-color relative text-center">
+            <img src="pics/hero.jpg" alt="hero-image" class="w-full h-[40vh] object-cover">
+            <div class="absolute top-0 left-0 w-full h-[40vh] bg-gradient-to-b from-transparent to-pry-color"></div>
+            <div class="text-white flex gap-3 w-full flex-col items-center justify-center absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <h2 class="font-bold text-[1.5em]">Seemless Banking</h2>
+                <p>Banking like a pro without limitations</p>
+                <a href="" class="bg-white text-pry-color px-4 py-3 w-32 inline font-semibold">Get started</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center">
+        <a href="" class="">Click here to Link your NIN and BVN to stay Active</a>
+    </section>
+
+</body>
+</html>
