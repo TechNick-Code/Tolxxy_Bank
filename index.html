@@ -29,7 +29,17 @@
                         'sec-color': '#f7f7f9',
                         'white': '#fff',
                         'ttc':'#0A1A2E'
-                    }
+                    },
+                    animation: {
+                        'pulse1': 'pulse 2s infinite',
+                        'pulse2': 'pulse 3s infinite',
+                        'pulse3': 'pulse 4s infinite',
+                        'pulse4': 'pulse 5s infinite',
+                        'pulse5': 'pulse 6s infinite',
+                        'pulse6': 'pulse 7s infinite',
+                        'pulse7': 'pulse 8s infinite',
+                        'pulse8': 'pulse 9s infinite',
+                    },
                 }
             }
         }
@@ -86,7 +96,7 @@
                 <h2 class="font-bold text-[1.5em]
                             lg:text-[4em]">Seemless Banking</h2>
                 <p class="lg:text-[1.2em]">Banking like a pro without limitations</p>
-                <a href="" class="bg-white flex items-center gap-6 text-pry-color px-4 py-3 w-32 inline rounded-lg font-semibold lg:mt-[1em] lg:w-44 lg:py-5 lg:px-6 ">
+                <a href="" class="bg-white flex items-center gap-4 text-pry-color px-4 py-3 w-32 inline rounded-lg font-semibold lg:mt-[1em] lg:w-[11vw] lg:py-5 lg:px-6 hover:scale-[0.90] transition-all ease-in duration-300">
                     <p>Get started</p>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 inline">
                         <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
@@ -97,18 +107,33 @@
         </div>
     </section>
 
-    <section class=" flex items-center my-7 px-[1em] gap-4 py-5 bg-blue-100">
-        <img src="pics/connect.png" alt="" class="size-12 mx-aut">
-        <a href="" class="">Click here to Link your NIN and BVN to stay active</a>
+    <section class="relative overflow-hidden w-full flex-col lg:h-[40vh] flex justify-center items-center my-7 px-[1em] gap-4 py-5 bg-blue-100">
+        <div class="absolute rounded-[8em] w-[100vw] h-[50vh] bg-blue-50 animate-pulse8"></div>
+        <div class="absolute rounded-[8em] w-[90vw] h-[50vh] bg-blue-100 animate-pulse7"></div>
+        <div class="absolute rounded-[8em] w-[80vw] h-[50vh] bg-blue-200 animate-pulse6"></div>
+        <div class="absolute rounded-[8em] w-[70vw] h-[50vh] bg-blue-300 animate-pulse5"></div>
+        <div class="absolute rounded-[8em] w-[60vw] h-[50vh] bg-blue-400 aniamte-pulse4"></div>
+        <div class="absolute rounded-[8em] w-[50vw] h-[50vh] bg-blue-500 animate-pulse3"></div>
+        <div class="absolute rounded-[8em] w-[40vw] h-[50vh] bg-blue-600 animate-pulse2"></div>
+        <div class="absolute rounded-[8em] w-[30vw] h-[45vh] bg-blue-700 animate-pulse1"></div>
+        
+        <div class="z-50 flex-col w-1/3 lg:h-[35vh] flex justify-center items-center my-7 px-[1em] gap-4 py-5">
+            <div class="flex gap-4 items-center">
+                <!-- <img src="pics/connect.png" alt="" class="size-12 lg:size-16"> -->
+              <h1 class="font-bold text-white text-center text-[1.5em] lg:text-[2.4em] text-ttc leading-[1.2]">Link your NIN and BVN to stay active</h1>
+            </div> 
+             
+             <a href="" class="bg-white flex justify-center items-center gap-4 text-pry-color px-4 py-3 w-32 inline rounded-lg font-semibold lg:mt-[1em] lg:w-[9vw] lg:py-5 lg:px-6 hover:scale-[0.90] transition-all ease-in duration-300">Click here</a>
+        </div>
     </section>
 
     <section class="px-[1em] flex flex-col gap-12 px-[5em] lg:mt-[5em]">
-        <h1 class="font-semibold text-[2em] text-ttc text-center leading-[1.2]">All the tools you need to enjoy easy life</h1>
+        <h1 class="font-semibold lg:font-bold lg:text-[2.4em] mb-10 text-[2em] text-ttc text-center leading-[1.2]">All the tools you need to enjoy easy life</h1>
 
         <!-- transfer section -->
-        <div class="transfer flex flex-col lg:flex-row-reverse gap-5 items-center justify-between">
+        <div class="transfer flex flex-col lg:flex-row-reverse gap-5 items-start justify-between">
             <div>
-                <img src="pics/bank.jpg" alt="" class="w-full h-[20em] object-cover rounded-lg"> 
+                <img src="pics/bank.jpg" alt="" class="w-full h-[20vh] lg:h-[60vh] object-cover rounded-lg"> 
             </div>
             <div  class="flex flex-col justify-center gap-1 lg:gap-3 lg:w-[30vw]">
                 <h1 class="font-bold text-[1.5em] lg:text-[2.4em] text-ttc leading-[1.2]">Transfer like never before</h1>
@@ -121,13 +146,13 @@
         </div>
 
         <!-- deposit section -->
-        <div class="deposit flex flex-col lg:flex-row-reverse gap-5 items-center justify-between">
+        <div class="deposit flex flex-col lg:flex-row-reverse gap-5 items-start justify-between lg:my-[3em]">
             <div>
-                <img src="pics/bank.jpg" alt="" class="w-full h-[20em] object-cover rounded-lg">
+                <img src="pics/bank.jpg" alt="" class="w-full h-[20vh] lg:h-[60vh] object-cover rounded-lg">
             </div>
             <div class="flex flex-col justify-center gap-1 lg:gap-3 lg:w-[30vw]">
                 <h1 class="font-bold text-[1.5em] lg:text-[2.4em] text-ttc leading-[1.2]">Deposit like the river of jodan</h1>
-                <p class="text-ttc lg:text-[1.2em] leading-[1.2]">you can deposit money anywhere and anytime with just a tap</p>
+                <p class="text-ttc lg:text-[1.2em] leading-[1.2]">You can deposit money anywhere and anytime with just a tap</p>
                 <div class="flex gap-3 lg:gap-10 items-center my-2 lg:my-4">
                     <a href="" class="bg-pry-color text-white rounded-lg lg:text-[1.2em] px-6 py-2 lg:px-10 lg:py-4">Create an account</a>
                     <a href="" class="text-pry-color lg:text-[1.2em]">Learn more</a>
@@ -136,13 +161,13 @@
         </div>
 
         <!-- paybills section -->
-        <div class="pay-bills flex flex-col lg:flex-row-reverse gap-5 items-center justify-between">
+        <div class="pay-bills flex flex-col lg:flex-row-reverse gap-5 items-start justify-between">
             <div>
-                <img src="pics/bank.jpg" alt="" class="w-full h-[20em] object-cover rounded-lg">
+                <img src="pics/bank.jpg" alt="" class="w-full h-[20vh] lg:h-[60vh] object-cover rounded-lg">
             </div>
             <div class="flex flex-col justify-center gap-1 lg:gap-3 lg:w-[30vw]">
                 <h1 class="font-bold text-[1.5em] lg:text-[2.4em] text-ttc leading-[1.2]">Paying bills made easy</h1>
-                <p class="text-ttc lg:text-[1.2em] leading-[1.2]">less worries about paying bills, we got you covered</p>
+                <p class="text-ttc lg:text-[1.2em] leading-[1.2]">Less worries about paying bills, we got you covered</p>
                 <div class="flex gap-3 lg:gap-10 items-center my-2 lg:my-4">
                     <a href="" class="bg-pry-color text-white rounded-lg lg:text-[1.2em] px-6 py-2 lg:px-10 lg:py-4">Create an account</a>
                     <a href="" class="text-pry-color lg:text-[1.2em]">Learn more</a>
