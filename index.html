@@ -38,7 +38,8 @@
 </head>
 <body class="bg-sec-color md:bg-white
             lg:flex lg:flex-col md:justify-normal lg:justify-normal">
-    <header class="flex w-full h-12 justify-between items-center px-[1em] z-50">
+    <header class="flex w-full h-12 justify-between items-center px-[1em] z-50
+                    lg:h-20 lg:px-[5em]">
 
             <!-- left section -->
             <div class="flex items-center gap-1">
@@ -48,8 +49,10 @@
                         </path>
                     </svg>       
                 </div>
-                <img src="pics/logo (3).png" alt="Tolxxy Bank Logo" class="size-7 rounded-full p-1    ">
-                <h1 class="text-pry-color font-semibold text-lg">Tolxxy<span class="text-black">Bank</span></h1>
+                <img src="pics/logo (3).png" alt="Tolxxy Bank Logo" 
+                     class="size-7 rounded-full p-1
+                            lg:size-9"/>
+                <h1 class="text-pry-color font-bold text-lg">Tolxxy<span class="text-black font-semibold">Bank</span></h1>
             </div>
             
             <!-- right section -->
@@ -58,12 +61,13 @@
 
                     <a href="" class="get-started lg:hidden bg-pry-color text-white text-sm px-5 py-5">Get started</a>
                     
-                    <ul class="hidden space-y-4 lg:flex lg:items-center lg:gap-6 lg:space-y-0">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Home</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Accounts</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Transactions</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Settings</a></li>
-                        <a href="" class="get-started bg-pry-color text-white text-sm px-3 py-4">Get started</a>
+                    <ul class="hidden space-y-4 lg:flex lg:items-center lg:gap-4 lg:space-y-0">
+                        <li><a href="#" class="text-gray-600 hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">Accounts</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">Transactions</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">Settings</a></li>
+                        <a href="" class="get-started bg-pry-color rounded-lg text-white text-sm px-3 py-4
+                                          lg:px-5">Get started</a>
                     </ul>
                 </nav>
             
@@ -74,12 +78,14 @@
     </div>
 
     <section>
-        <div class="w-full h-[60vh] bg-img bg-cover bg-center bg-pry-color relative text-center">
-            <img src="pics/hero.jpg" alt="hero-image" class="w-full h-[40vh] object-cover">
-            <div class="absolute top-0 left-0 w-full h-[40vh] bg-gradient-to-b from-transparent to-pry-color"></div>
-            <div class="text-white flex gap-3 w-full flex-col items-center justify-center absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <h2 class="font-bold text-[1.5em]">Seemless Banking</h2>
-                <p>Banking like a pro without limitations</p>
+        <div class="w-full h-[60vh] lg:h-[80vh] bg-img bg-cover bg-center bg-pry-color relative text-center">
+            <img src="pics/hero.jpg" alt="hero-image" class="w-full h-[40vh] lg:h-[70vh] object-cover">
+            <div class="absolute top-0 left-0 w-full h-[40vh] lg:h-[70vh] bg-gradient-to-b from-transparent to-pry-color"></div>
+            <div class="text-white flex gap-3 w-full flex-col items-center justify-center absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                        lg:items-start lg:pl-[5em] lg:top-1/2 ">
+                <h2 class="font-bold text-[1.5em]
+                            lg:text-[4em]">Seemless Banking</h2>
+                <p class="lg:text-[1.2em]">Banking like a pro without limitations</p>
                 <a href="" class="bg-white text-pry-color px-4 py-3 w-32 inline font-semibold">Get started</a>
             </div>
         </div>
@@ -90,7 +96,7 @@
         <a href="" class="">Click here to Link your NIN and BVN to stay active</a>
     </section>
 
-    <section class="px-[1em] flex flex-col gap-12 px-[5em]">
+    <section class="px-[1em] flex flex-col gap-12 px-[5em] lg:mt-[5em]">
         <h1 class="font-semibold text-[2em] text-ttc text-center leading-[1.2]">All the tools you need to enjoy easy life</h1>
 
         <!-- transfer section -->
@@ -99,10 +105,10 @@
                 <img src="pics/bank.jpg" alt="" class="w-full h-[20em] object-cover rounded-lg"> 
             </div>
             <div  class="flex flex-col justify-center gap-1 lg:gap-3 lg:w-[30vw]">
-                <h1 class="font-bold text-[1.5em] lg:text-[2.4em] text-ttc">Transfer like never before</h1>
-                <p class="text-ttc lg:text-[1.2em]">Enjoy transfers like the speed of light without any network interuption</p>
+                <h1 class="font-bold text-[1.5em] lg:text-[2.4em] text-ttc leading-[1.2]">Transfer like never before</h1>
+                <p class="text-ttc lg:text-[1.2em] leading-[1.2]">Enjoy transfers like the speed of light without any network interuption</p>
                 <div class="flex gap-3 lg:gap-10 items-center my-2 lg:my-4">
-                    <a href="" class="bg-pry-color text-white lg:text-[1.2em] px-6 py-2 lg:px-10 lg:py-4">Create an account</a>
+                    <a href="" class="bg-pry-color text-white rounded-lg lg:text-[1.2em] px-6 py-2 lg:px-10 lg:py-4">Create an account</a>
                     <a href="" class="text-pry-color lg:text-[1.2em]">Learn more</a>
                 </div>
             </div>
@@ -113,12 +119,12 @@
             <div>
                 <img src="pics/bank.jpg" alt="" class="w-full h-[20em] object-cover rounded-lg">
             </div>
-            <div>
-                <h1 class="font-bold text-[1.5em] text-ttc">Deposit like the river of jodan</h1>
-                <p class="text-ttc">you can deposit money anywhere and anytime with just a tap</p>
-                <div class="flex gap-3 items-center my-2">
-                    <a href="" class="bg-pry-color text-white px-6 py-2">Register</a>
-                    <a href="" class="text-pry-color">Learn more</a>
+            <div class="flex flex-col justify-center gap-1 lg:gap-3 lg:w-[30vw]">
+                <h1 class="font-bold text-[1.5em] lg:text-[2.4em] text-ttc leading-[1.2]">Deposit like the river of jodan</h1>
+                <p class="text-ttc lg:text-[1.2em] leading-[1.2]">you can deposit money anywhere and anytime with just a tap</p>
+                <div class="flex gap-3 lg:gap-10 items-center my-2 lg:my-4">
+                    <a href="" class="bg-pry-color text-white rounded-lg lg:text-[1.2em] px-6 py-2 lg:px-10 lg:py-4">Create an account</a>
+                    <a href="" class="text-pry-color lg:text-[1.2em]">Learn more</a>
                 </div>
             </div>
         </div>
@@ -128,12 +134,12 @@
             <div>
                 <img src="pics/bank.jpg" alt="" class="w-full h-[20em] object-cover rounded-lg">
             </div>
-            <div>
-                <h1 class="font-bold text-[1.5em] text-ttc">Paying bills made easy</h1>
-                <p class="text-ttc">less worries about paying bills, we got you covered</p>
-                <div class="flex gap-3 items-center my-2">
-                    <a href="" class="bg-pry-color text-white px-6 py-2">Register</a>
-                    <a href="" class="text-pry-color">Learn more</a>
+            <div class="flex flex-col justify-center gap-1 lg:gap-3 lg:w-[30vw]">
+                <h1 class="font-bold text-[1.5em] lg:text-[2.4em] text-ttc leading-[1.2]">Paying bills made easy</h1>
+                <p class="text-ttc lg:text-[1.2em] leading-[1.2]">less worries about paying bills, we got you covered</p>
+                <div class="flex gap-3 lg:gap-10 items-center my-2 lg:my-4">
+                    <a href="" class="bg-pry-color text-white rounded-lg lg:text-[1.2em] px-6 py-2 lg:px-10 lg:py-4">Create an account</a>
+                    <a href="" class="text-pry-color lg:text-[1.2em]">Learn more</a>
                 </div>
             </div>
            
