@@ -39,6 +39,7 @@
                         'pulse6': 'pulse 7s infinite',
                         'pulse7': 'pulse 8s infinite',
                         'pulse8': 'pulse 9s infinite',
+                        'spin':'spin 4s infinite'
                     },
                 }
             }
@@ -179,32 +180,39 @@
     </section>
 
     <!-- how to get started section -->
-    <section class="my-12 px-[1em]">
-        <h1 class="font-semibold text-[2em] text-ttc">How to get Started</h1>
-        <p class="text-ttc">Follow this simple steps and you are good to go</p>
-        <div class="mt-6 flex flex-col gap-10">
+    <section class="my-12 px-[1em] flex grid grid-cols-3 gap-14 mx-[5em]">
+        <div class="">
+            <h1 class="font-bold text-[2.5em] text-ttc">How to get Started</h1>
+            <p class="text-ttc text-[1.2em]">Follow this simple steps on how to become a registered user and you are good to go</p>
+        </div>
+        <!-- <div class="mt-6 flex flex-col gap-10"> -->
             <!-- create an account -->
-            <div class="border-l-4 border-pry-color pl-8 flex flex-col leading-[1.5]">
-                <h2 class="font-semibold text-[1.5em] text-ttc">Create an account</h2>
-                <p>Sign up with your email, your phone number, NIN and BVN</p>
+            <div class="relative overflow-hidden group bg-blue-50 flex flex-col justify-center px-8 py-8 rounded-[1.7em] hover:bg-blue-400 transition-all duration-400">
+                <h2 class="font-semibold max-w-44 max-h-20 text-[2.5em] text-ttc mb-[2.5em] group-hover:text-white">Create an account</h2>
+                <p class="text-ttc text-[1.2em] group-hover:text-white text-[1.2em] group-hover:text-white">Sign up with your email, your phone number, NIN and BVN</p>
+                <div class="w-36 h-36 border-[0.7em] border-blue-400 group-hover:border-white absolute top-10 -right-5 rounded-[1.5em] rotate-[-32deg] group-hover:animate-spin"></div>
+            
             </div>
 
             <!-- verify account -->
-            <div class="border-l-4 border-pry-color pl-8 flex flex-col leading-[1.5]">
-                <h2 class="font-semibold text-[1.5em] text-ttc">Verify your account</h2>
-                <p>Verify your account with a valid ID card eg: Driver's licence, voters card, NIN</p>
+            <div class="relative overflow-hidden group bg-purple-50 flex flex-col justify-center px-8 py-8 rounded-[1.7em] hover:bg-purple-400 transition-all duration-400">
+                <h2 class="font-semibold text-[2.5em] text-ttc mb-[2.5em] group-hover:text-white max-h-20">Verify your account</h2>
+                <p class="text-ttc text-[1.2em] group-hover:text-white">Verify your account with a valid ID card eg: Driver's licence, voters card, NIN</p>
+                <div class="w-36 h-36 border-[0.7em] border-purple-400 group-hover:border-white absolute top-0 -right-5 rounded-[1.5em] rotate-[-12deg] group-hover:animate-spin"></div>
             </div>
 
-            <!-- make a deposit -->
-            <div class="border-l-4 border-pry-color pl-8 flex flex-col leading-[1.5]">
-                <h2 class="font-semibold text-[1.5em] text-ttc">Make a deposit</h2>
-                <p>Make a deposit of at least #100 to activate your account for transfers</p>
+            <!-- fund your account -->
+            <div class="relative overflow-hidden group bg-green-50 flex flex-col justify-center px-8 py-8 rounded-[1.7em] hover:bg-green-400 transition-all duration-400">
+                <h2 class="font-semibold text-[2.5em] max-w-48 max-h-20 text-ttc mb-[2.5em] group-hover:text-white">Fund your account</h2>
+                <p class="z-20 text-ttc text-[1.2em] group-hover:text-white">Make a deposit of at least #100 to activate your account for transfers</p>
+                <div class="w-36 h-36 border-[0.7em] border-green-400 group-hover:border-white absolute top-10 -right-5 rounded-[1.5em] rotate-[-15deg] group-hover:animate-spin"></div>
             </div>
             
             <!-- enjoy banking -->
-            <div class="border-l-4 border-pry-color pl-8 flex flex-col leading-[1.5]">
-                <h2 class="font-semibold text-[1.5em] text-ttc">Enjoy banking</h2>
-                <p>All done. Now enjoy seamless banking with Tolxxy Bank</p>
+            <div class="relative overflow-hidden group bg-orange-50 flex flex-col justify-center px-8 py-8 rounded-[1.7em] hover:bg-orange-400 transition-all ease-in duration-800">
+                <h2 class="font-semibold text-[2.5em] text-ttc mb-[2.5em] max-h-20 group-hover:text-white">Enjoy banking</h2>
+                <p class="z-20 text-ttc text-[1.2em] group-hover:text-white">All done. Now enjoy seamless banking with Tolxxy Bank</p>
+                <div class="w-36 h-36 border-[0.7em] border-orange-400 group-hover:border-white absolute top-16 -right-5 rounded-[1.5em] rotate-[14deg] group-hover:animate-spin"></div>
             </div>
         </div>
     </section>
