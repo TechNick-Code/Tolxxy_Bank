@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tolxxy Bank</title>
+  <link href="/css/output.css" rel="stylesheet">
+  <link rel="icon" href="pics/logo (3).png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+ <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                  keyframes: {
+                        shake: {
+                            '0%': { transform: 'translateX(0)' },
+                            '25%': { transform: 'translateX(-2px)' },
+                            '35%': { transform: 'translateY(-2px)' },
+                            '50%': { transform: 'translateX(2px)' },
+                            '75%': { transform: 'translateX(-2px)' },
+                            '85%': { transform: 'translateY(-2px)' },
+                            '100%': { transform: 'translateX(0)' },
+                        }
+                  },
+                  icons: {
+                    'icon': 'fill-gray-600 hover:fill-gray-700 w-5',
+                  },
+                  backgroundImage: {
+                    'img': "url('../workspace/project/pictures/ape.jpg')",
+                  },
+                  boxShadow: {
+                    'soft-shad': '0 2px 20px -10px rgba(0, 0, 0, 0.3)',
+                    'top-shadow': '0 -1px 13px -10px rgba(0, 0, 0, 0.3)'
+                  },
+                    colors: {
+                        'pry-color': '#317FE5',
+                        'light-blue': '#E8F0FF',
+                        'sidebar-bg': '#F8FAFF',
+                        'sec-color': '#f7f7f9',
+                        'white': '#fff',
+                        'ttc':'#0A1A2E'
+                    },
+                    animation: {
+                        'pulse1': 'pulse 2s infinite',
+                        'pulse2': 'pulse 3s infinite',
+                        'pulse3': 'pulse 4s infinite',
+                        'pulse4': 'pulse 5s infinite',
+                        'pulse5': 'pulse 6s infinite',
+                        'pulse6': 'pulse 7s infinite',
+                        'pulse7': 'pulse 8s infinite',
+                        'pulse8': 'pulse 9s infinite',
+                        'spin':'spin 4s infinite',
+                        'shake':'shake 0.3s ease-in 2'
+                    },
+                    
+                }
+
+            }
+        }
+    </script>
+
+</head>
+<body class="bg-sec-color md:bg-white
+            lg:flex lg:flex-col md:justify-normal lg:justify-normal">
+    <header class="flex w-full h-12 justify-between items-center px-[1em] z-50
+                    lg:h-20 lg:px-[5em]">
+
+            <!-- left section -->
+            <div class="flex items-center gap-1">
+                <div class="icon lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 mr-3">
+                        <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z">
+                        </path>
+                    </svg>       
+                </div>
+
+                <div class="flex gap-1 items-center mr-[1em]">
+                    <img src="pics/logo (3).png" alt="Tolxxy Bank Logo" 
+                         class="size-7 rounded-full p-1
+                                lg:size-9"/>
+                    <h1 class="text-gray-800 font-semibold text-lg">Tolxxy<span class="text-pry-color font-bold">Bank</span></h1>
+                </div>
+                <ul class="hidden lg:flex">
+                    <li>
+                        <div class="relative group inline-block">
+                            <button class="flex items-center gap-3 text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">
+                                <p>Personal</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 inline">
+                                    <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                                    </path>
+                                </svg>
+                            </button>
+        
+                            <div class="absolute top-8 right-[-50%] hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg w-[15vw] px-3 py-3 transition-all duration-300">
+                                <ul class="py-2 text-gray-700">
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Savings Account</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Loans</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Credit</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Personal Business</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                    </li>
+                    <li>
+                        <div class="relative group inline-block">
+                            <button class="flex items-center gap-3 text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">
+                                <p>Business</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 inline">
+                                    <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                                    </path>
+                                </svg>
+                            </button>
+        
+                            <div class="absolute top-8 right-[-50%] hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg w-[15vw] px-3 py-3 transition-all duration-300">
+                                <ul class="py-2 text-gray-700">
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Current Account</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Small Scale Business</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Loans</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Marketing</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Long Term Business plan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- right section -->
+            <div class="flex items">
+                <nav class="">
+
+                    <a href="" class="get-started lg:hidden bg-pry-color text-white text-sm px-5 py-5">Get started</a>
+                    
+                    <ul class="hidden space-y-4 lg:flex lg:items-center lg:gap-2 lg:space-y-0">
+                        <!-- <li><a href="#" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">Home</a></li> -->
+
+                         <li>
+                        <div class="lg:hidden relative group inline-block">
+                            <button class="flex items-center gap-3 text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">
+                                <p>Personal</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 inline">
+                                    <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                                    </path>
+                                </svg>
+                            </button>
+        
+                            <div class="absolute top-8 right-[-50%] hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg w-[15vw] px-3 py-3 transition-all duration-300">
+                                <ul class="py-2 text-gray-700">
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Savings Account</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Loans</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Credit</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Personal Business</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                    </li>
+                    <li>
+                        <div class="lg:hidden relative group inline-block">
+                            <button class="flex items-center gap-3 text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">
+                                <p>Business</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 inline">
+                                    <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                                    </path>
+                                </svg>
+                            </button>
+        
+                            <div class="absolute top-8 right-[-50%] hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg w-[15vw] px-3 py-3 transition-all duration-300">
+                                <ul class="py-2 text-gray-700">
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Current Account</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Small Scale Business</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Loans</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Marketing</li>
+                                    <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Long Term Business plan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                    </li>
+                        
+                        <li>
+                            <div class="relative group inline-block">
+                                <button class="flex items-center gap-3 text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">
+                                    <p>Products</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 inline">
+                                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                                        </path>
+                                    </svg>
+
+                                </button>
+
+                                <div class="absolute top-8 right-[-40%] hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg w-[15vw] px-3 py-3 transition-all duration-300">
+                                    <ul class="py-2 text-gray-700">
+                                        <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Trnasfer</li>
+                                        <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Deposit</li>
+                                        <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Withdrawal</li>
+                                        <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Bills Payment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li><a href="about.html" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">About</a></li>
+                        <li><a href="#" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">Contact</a></li>
+                        <li><a href="#" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">News & Updates</a></li>
+                        <a href="register.html" class="get-started bg-pry-color rounded-lg text-white text-sm px-3 py-4
+                                          lg:px-5">Get started</a>
+                    </ul>
+                </nav>
+            
+    </header>
+
+  <section>
+
+  </section>
+
+    </body>
+    </html>
