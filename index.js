@@ -1,6 +1,6 @@
 // dropdown
 const dropdown = document.getElementById('dropdown');
-const dropdownChild = document.getElementById('dropdown-cild');
+const dropdownChild = document.getElementById('dropdown-child');
 
 dropdown.addEventListener('click', () => {
     dropdownChild.classList.toggle('hidden');
