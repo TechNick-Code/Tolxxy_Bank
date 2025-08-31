@@ -135,17 +135,17 @@
 
                 <nav class="z-50 bg-white">
                     
-                    <ul id="navigation" class="z-50 bg-white -translate-x-[30em] w-full absolute lg:relative inset-0 flex flex-col lg:flex lg:flex-row lg:items-center text-lg lg:text-[16px] gap-10 lg:gap-2 lg:space-y-0 px- transition-all duration-300">
+                    <ul id="navigation" class="z-50 bg-white -translat] w-full absolute lg:relative inset-0 flex flex-col lg:flex lg:flex-row lg:items-center text-lg lg:text-[16px] gap-10 lg:gap-2 lg:space-y-0 px-4 transition-all duration-300">
                         <!-- <li><a href="#" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">Home</a></li> -->
-                         <svg id="cancel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:hidden mx-4 my-5">
+                         <svg id="cancel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:hidden mx-2 my-5">
                             <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z">                          
                             </path>
                         </svg>
                         
-                    <li><a href="index.html" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">Home</a></li>
+                    <li><a href="index.html" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-2 py-2 rounded-lg lg:rounded-[10em]">Home</a></li>
                     <li>
                         <div class="lg:hidden relative group inline-block overflow-hidde">
-                            <button id="dropdown" class="flex items-center gap-3 text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">
+                            <button id="dropDown" class="flex items-center gap-3 text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-2 py-2 rounded-lg lg:rounded-[10em]">
                                 <p>Personal</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 inline">
                                     <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
@@ -153,7 +153,7 @@
                                 </svg>
                             </button>
         
-                            <div id="dropdown-child" class="absolute top-0 right-[-14em] z-20 lg:top-8 lg:right-[-50%] hidden lg:group-hover:block group-focus:block bg-white shadow-lg mt-2 rounded-lg w-[60vw] lg:w-[15vw] px-3 py-3 transition-all duration-300">
+                            <div id="dropDown-child" class="absolute top-0 right-[-14em] z-20 lg:top-8 lg:right-[-50%] hidden lg:group-hover:block group-focus:block bg-white shadow-lg mt-2 rounded-lg w-[60vw] lg:w-[15vw] px-3 py-3 transition-all duration-300">
                                 <ul class="py-2 text-gray-700">
                                     <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Savings Account</li>
                                     <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Loans</li>
@@ -166,7 +166,7 @@
                     </li>
                     <li>
                         <div class="lg:hidden relative group inline-block">
-                            <button class="flex items-center gap-3 text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">
+                            <button id="dropDown2" class="flex items-center gap-3 text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-2 py-2 rounded-lg lg:rounded-[10em]">
                                 <p>Business</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 inline">
                                     <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
@@ -174,7 +174,7 @@
                                 </svg>
                             </button>
         
-                            <div class="absolute top-8 right-[-50%] hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg w-[15vw] px-3 py-3 transition-all duration-300">
+                           <div id="dropDown-child2" class="absolute top-0 right-[-14em] z-20 lg:top-8 lg:right-[-50%] hidden lg:group-hover:block group-focus:block bg-white shadow-lg mt-2 rounded-lg w-[60vw] lg:w-[15vw] px-3 py-3 transition-all duration-300">
                                 <ul class="py-2 text-gray-700">
                                     <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Current Account</li>
                                     <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Small Scale Business</li>
@@ -189,7 +189,7 @@
                         
                         <li>
                             <div class="relative group inline-block">
-                                <button class="flex items-center gap-3 text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">
+                                <button id="dropDown3" class="flex items-center gap-3 text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-2 py-2 rounded-lg lg:rounded-[10em]">
                                     <p>Products</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 inline">
                                         <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
@@ -198,7 +198,7 @@
 
                                 </button>
 
-                                <div class="absolute top-8 right-[-40%] hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg w-[15vw] px-3 py-3 transition-all duration-300">
+                               <div id="dropDown-child3" class="absolute top-0 right-[-14em] z-20 lg:top-8 lg:right-[-50%] hidden lg:group-hover:block group-focus:block bg-white shadow-lg mt-2 rounded-lg w-[60vw] lg:w-[15vw] px-3 py-3 transition-all duration-300">
                                     <ul class="py-2 text-gray-700">
                                         <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Trnasfer</li>
                                         <li class="px-4 py-2 hover:bg-blue-100 rounded-md cursor-pointer">Deposit</li>
@@ -209,10 +209,10 @@
                             </div>
                         </li>
 
-                        <li><a href="about.html" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">About</a></li>
-                        <li><a href="#" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">Contact</a></li>
-                        <li><a href="#" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-4 py-2 rounded-[10em]">News & Updates</a></li>
-                        <a href="register.html" class="get-started text-lg bg-pry-color rounded-lg text-white lg:text-[16px] px-3 py-4
+                        <li><a href="about.html" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-2 py-2 rounded-lg lg:rounded-[10em]">About</a></li>
+                        <li><a href="#" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-2 py-2 rounded-lg lg:rounded-[10em]">Contact</a></li>
+                        <li><a href="#" class="text-ttc hover:text-ttc hover:bg-blue-100 transition-all ease-in duration-400 px-2 py-2 rounded-lg lg:rounded-[10em]">News & Updates</a></li>
+                        <a href="register.html" class="get-started mx-3 mt-[7em] flex justify-center text-lg bg-pry-color rounded-lg text-white lg:text-[16px] px-3 py-4
                                           lg:px-5">Get started</a>
                     </ul>
                 </nav>
