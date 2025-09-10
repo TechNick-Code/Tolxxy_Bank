@@ -16,10 +16,10 @@ dropDown2.addEventListener('click', () => {
 
 dropDown3.addEventListener('click', () => {
     dropDownChild3.classList.toggle('hidden');
-});trgt
+});
 
 
-
+// navbar menu
 const menu = document.getElementById('menu');
 const cancel = document.getElementById('cancel');
 const nav = document.getElementById('navigation');
